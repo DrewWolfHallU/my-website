@@ -1,0 +1,16 @@
+/*This is an example of an External Style Sheet*/
+ h1 {
+    text-align:center;
+    color: green;
+    text-transform: uppercase;
+ }
+ h2 {
+    background-color: bisque;
+    font-family: Papyrus, "Brush Script MT", Monaco;
+ }
+ p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 50px;
+    word-spacing: 2px;
+    background-color: honeydew;
+ }
