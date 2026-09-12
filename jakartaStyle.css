@@ -19,3 +19,8 @@ p.eat-drink, p.visit {
     text-transform: uppercase;
     color: blue;
 }
+/*Link selectors*/
+a:link { color: green; }
+a:visited { color: blue; }
+a:hover { background-color: black; } 
+a:active { color: red; }
