@@ -7,6 +7,6 @@ h1 {
     text-align: center;
 }
 /*Applies text indent to two specific paragraphs: class name "eat-drink", and class name "visit"*/
-.eat-drink, .visit{
+p .eat-drink, .visit{
     text-indent: 10%;
 }
