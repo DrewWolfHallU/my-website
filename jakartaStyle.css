@@ -2,6 +2,7 @@
 h1 {
     width: 50%;
     padding: 10px;
-    border: 2px solid green;
+    border: 2px solid cornflowerblue;
     margin: auto;
+    text-align:center;
 }
