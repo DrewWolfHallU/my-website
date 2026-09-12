@@ -4,5 +4,9 @@ h1 {
     padding: 10px;
     border: 2px solid cornflowerblue;
     margin: auto;
-    text-align:center;
+    text-align: center;
+}
+/*Applies text indent to two specific paragraphs: class name "eat-drink", and class name "visit"*/
+.eat-drink, .visit{
+    text-indent: 10%;
 }
