@@ -10,3 +10,7 @@ h1 {
 p.eat-drink, p.visit{
     text-indent: 10%;
 }
+/*Change text color of "visit" elements*/
+.visit{
+    color: #808000
+}
