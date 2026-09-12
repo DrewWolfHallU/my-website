@@ -14,3 +14,8 @@ p.eat-drink, p.visit{
 .visit{
     color: #808000;
 }
+/*Use nth-child to apply a style to the third item in the list of restaurants: first set the text to uppercase, second set the text color to blue*/
+.restaurants li:nth-child(3){
+    text-transform: uppercase;
+    color: blue;
+}
