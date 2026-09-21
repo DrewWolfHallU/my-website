@@ -1,3 +1,23 @@
-.childrenGardening { float: right }
-.wateringCan { float: left}
-.diggingDirt { float: right }
+.childrenGardening { 
+    float: right;
+    margin-left: 10px;
+    border: double 5px salmon;
+    border-radius: 50px 0px 0px 50px ;}
+.wateringCan { 
+    float: left;
+    margin-right: 15px;
+    border: inset 3px blue;
+    border-radius: 50px;}
+.diggingDirt { 
+    float: right;
+    margin-left: 10px;
+    border: dashed 4px darkseagreen;
+    border-radius: 0px 0px 100px 100px ;}
+.banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+footer {
+    background-image: url(images/gardeningCollage.jpg);
+}
