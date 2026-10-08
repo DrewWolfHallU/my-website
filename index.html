@@ -10,6 +10,47 @@
       .highlight{background-color: cornflowerblue;}
       .indent{text-indent:20%;}
       #shape{list-style-type: square;}
+
+      .item1 { grid-area: item1; }
+      .item2 { grid-area: item2; }
+      .item3 { grid-area: item3; }
+      .item4 { grid-area: item4; }
+      .item5 { grid-area: item5; }
+      .item6 { grid-area: item6; }
+      .item7 { grid-area: item7; }
+      .item8 { grid-area: item8; }
+      .item9 { grid-area: item9; }
+
+      .RaisedBeds {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+          'item1 item2 item2'
+          'item1 item5 item6'
+          'item1 item8 item9';
+        gap: 5px;
+        background-color: rgba(45, 113, 46, 1);
+        padding: 5px;}
+      .RaisedBeds > div {
+        background-color: rgba(243, 187, 187, 1);
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+        font-size: 20px; }
+      .item1 {
+        grid-row: 1 / span 3;}
+      .item2 {
+        grid-column: 2 / span 2;
+        }
+      .item3{display:none;}
+      .item4{display:none;}
+      .item7{display:none;}
+      .item1 > img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+}
     </style>
 </head>
 <body style="background-color: seashell;">
@@ -31,6 +72,19 @@
         store cost. With supply chains under strain, having a garden gives you control over your own food source. It’s 
         empowering and practical.</p>
     <img class="wateringCan" src="images/wateringCan.jpg" alt="A watering can over lettuce" width="250px" height="400px">
+    <div class= "RaisedBeds">
+      <div class="item1"><img class="RaisedBedPic" src="images/RaisedBed.jpg" alt="An older woman working in a raised bed." width="100px" height="300px"></div>
+      <div class="item2">Raised Garden Beds</div>
+      <!-- <div class="item3">3</div> -->
+      <!-- <div class="item4">4</div> -->
+      <div class="item5">A raised garden bed is a type of garden bed that is elevated above the surrounding soil level, 
+        typically using a frame or enclosure.</div>
+      <div class="item6">This design allows for better drainage, aeration, and soil quality, making it an ideal choice for growing a wide range of plants.</div>
+      <!-- <div class="item7">7</div> -->
+      <div class="item8">Raised garden beds can be made from various materials, including wood, metal, and recycled plastic, and can be customized to fit any garden size or style.</div>
+      <div class="item9">Raised beds, especially those you don’t have to kneel to reach, can transform the gardening experience. The elderly and those with limited mobility can sit in a chair to tend plants. 
+        You can easily harvest your veggies without getting a kink in your neck.</div>
+    </div>    
     <h2>It Boosts Your Mood</h2>
       <p>I don’t know about you, but I always feel a little bit settled after a round of weeding or a half-hour or more 
         spent planting or harvesting. It turns out it’s in the dirt. One study found that exposure to a bacteria common 
