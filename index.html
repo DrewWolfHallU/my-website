@@ -22,7 +22,6 @@
       .item8 { grid-area: item8; }
       .item9 { grid-area: item9; }
 
-/*This is the CSS styling for the Raised Beds CSS Grid*/
       .RaisedBeds {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -52,6 +51,24 @@
         object-fit: cover;
         width: 100%;
         max-height: 100%;
+}
+/* Style for full table. */
+.Planting, .Planting td {
+  padding: 10px;
+  border: 1px solid rgba(20, 118, 69, 1);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Style for shading span cells*/
+.Spanshade, .Spanshade td {
+  background-color: #eee8aa;
+}
+.Spancells, .Spancells td {
+  background-color: #6b8e23
+}
+/* This rule can used on any cell we want to remove when we merge using rowspan or colspan */
+.remove{
+    display:none;
 }
     </style>
 </head>
@@ -118,6 +135,175 @@
         systems. Also, gardening helps forge relationships between generations. How many gardeners learned at the elbow of a parent or 
         grandparent? Gardening teaches kids about nature, responsibility, and where food really comes from. Gardening with kids also 
         provides them with the needed sensory input for calm, happy bodies and minds. It’s hands-on learning they’ll remember for a lifetime.</p>
+<!--Table-->
+<table class="Planting">
+ <thead>
+    <tr>
+        <th><img src="images/Garden_clip.jpg" alt="Clip art of gardening tools" width="50px" height="50px"></th>
+        <th>Crop</th>
+        <th>Days to Harvest</th>
+        <th>Jan</th>
+        <th>Feb</th>
+        <th>Mar</th>
+        <th>Apr</th>
+        <th>May</th>
+        <th>Jun</th>
+        <th>Jul</th>
+        <th>Aug</th>
+        <th>Sep</th>
+        <th>Oct</th>
+        <th>Nov</th>
+        <th>Dec</th>
+    </tr>
+ </thead>
+ <tbody>
+    <tr>
+      <td class="Spanshade" rowspan="2">Fruits</td>
+      <td>Strawberries</td>
+      <td>T= 55-65</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="2">T</td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="2">T</td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="remove"></td>
+      <td>Melons</td>
+      <td>T= 57-62</br>S= 85-90</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="3">S,T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="Spanshade" rowspan="3">Herbs</td>
+      <td>Basil</td>
+      <td>T= 14-35</br>S= 50-75</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="3">S,T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="remove"></td>
+      <td>Parsley</td>
+      <td>T= 33</br>S= 75</td>
+      <td></td>
+      <td class="Spancells" colspan="3">S,T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="2">S,T</td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="remove"></td>
+      <td>Dill</td>
+      <td>S= 40-55</td>
+      <td></td>
+      <td></td>
+      <td>S</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="2">S</td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="Spanshade" rowspan="3">Vegetables</td>
+      <td>Tomatoes</td>
+      <td>T= 75-85</br>S= 125-135*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="5">T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="remove"></td>
+      <td>Cucumbers</td>
+      <td>T= 28-37</br>S= 56-65</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="5">T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="remove"></td>
+      <td>Lettuce</td>
+      <td>T= 15-25</br>S= 40-50</td>
+      <td></td>
+      <td class="Spancells" colspan="3">S,T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="Spancells" colspan="2">S,T</td>
+      <td class="remove"></td>
+      <td class="remove"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+ </tbody>
+
+ <tfoot>
+    <tr>
+        <td>Source: <a href="https://content.ces.ncsu.edu/central-north-carolina-planting-calendar-for-annual-vegetables-fruits-and-herbs"> NC State Extension Planting Calendar</td>
+        <td colspan="14">Note: S = from seeds; T = transplants</br>* Start seeds indoors for later transplant into the garden. Do not plant seeds directly in the garden.</br>Dates listed are for planting outside in the garden. To grow transplants, seed 6-8 weeks before the "T" date.</td>
+    </tr>
+ </tfoot>
+
+</table>
     <h2>Gardens Build Community</h2>
       <p>I love a front yard garden and one reason is that folks stop by to chat when you have a garden. Gardens inspire conversation and 
         they build connections between neighbors. Garden clubs are a great way to share information and connect with folks who love plants 
