@@ -8,6 +8,10 @@
     background-color: bisque;
     font-family: Papyrus, "Brush Script MT", Monaco;
  }
+ h3 {
+    background-color: rgb(181, 203, 249);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ;
+ }
  p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-indent: 50px;

@@ -70,6 +70,13 @@
 .remove{
     display:none;
 }
+/*These rules are for the nested list*/
+.nestedlist {
+  list-style-type: '-';
+}
+.physicallist {
+    list-style-type: upper-alpha;
+  }
     </style>
 </head>
 <body style="background-color: seashell;">
@@ -83,6 +90,20 @@
         One study even found that gardening decreases your risk of dementia! Gardening also promotes healthier eating. 
         Growing your own fruits and vegetables gives you direct access to fresh, organic produce. You know exactly what 
         goes into your food, and it encourages you to eat more nutritious, seasonal meals. </p>
+          <h3>Physical Benefits of Gardening</h3>
+            <ol class="physicallist">
+              <li>Reduced Stress</li>
+              <li>Enhanced Mood</li>
+              <li>Increased Vitamin D Production</li>
+	            <li>Enhanced Physical Health
+		              <ul class="nestedlist">
+			              <li>Stronger bones and muscles</li>
+			              <li>Healthy weight management</li>
+			              <li>Reduced risk of chronic dieseases</li>
+		              </ul>
+	            </li>
+	            <li>Fresh Air</li>
+            </ol>
     <h2>You Never Have to Stop</h2>
       <p class="indent">Gardeners can continue to grow plants and enjoy the hobby even as they get older. Some modifications may need to 
         be made by raising beds to an easier height or going from a huge vegetable garden to a few containers, but the garden 
@@ -139,7 +160,7 @@
 <table class="Planting">
  <thead>
     <tr>
-        <th><img src="images/Gardenclip.jpg" alt="Clip art of gardening tools" width="50px" height="50px"></th>
+        <th><img src="images/Garden_clip.jpg" alt="Clip art of gardening tools" width="50px" height="50px"></th>
         <th>Crop</th>
         <th>Days to Harvest</th>
         <th>Jan</th>
@@ -177,7 +198,7 @@
     <tr>
       <td class="remove"></td>
       <td>Melons</td>
-      <td>T= 57-62</br>S= 85-90</td>
+      <td>T= 57-62<br>S= 85-90</td>
       <td></td>
       <td></td>
       <td></td>
@@ -194,7 +215,7 @@
     <tr>
       <td class="Spanshade" rowspan="3">Herbs</td>
       <td>Basil</td>
-      <td>T= 14-35</br>S= 50-75</td>
+      <td>T= 14-35<br>S= 50-75</td>
       <td></td>
       <td></td>
       <td></td>
@@ -211,7 +232,7 @@
     <tr>
       <td class="remove"></td>
       <td>Parsley</td>
-      <td>T= 33</br>S= 75</td>
+      <td>T= 33<br>S= 75</td>
       <td></td>
       <td class="Spancells" colspan="3">S,T</td>
       <td class="remove"></td>
@@ -245,7 +266,7 @@
     <tr>
       <td class="Spanshade" rowspan="3">Vegetables</td>
       <td>Tomatoes</td>
-      <td>T= 75-85</br>S= 125-135*</td>
+      <td>T= 75-85<br>S= 125-135*</td>
       <td></td>
       <td></td>
       <td></td>
@@ -262,7 +283,7 @@
     <tr>
       <td class="remove"></td>
       <td>Cucumbers</td>
-      <td>T= 28-37</br>S= 56-65</td>
+      <td>T= 28-37<br>S= 56-65</td>
       <td></td>
       <td></td>
       <td></td>
@@ -279,7 +300,7 @@
     <tr>
       <td class="remove"></td>
       <td>Lettuce</td>
-      <td>T= 15-25</br>S= 40-50</td>
+      <td>T= 15-25<br>S= 40-50</td>
       <td></td>
       <td class="Spancells" colspan="3">S,T</td>
       <td class="remove"></td>
