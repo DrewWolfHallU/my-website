@@ -77,9 +77,55 @@
 .physicallist {
     list-style-type: upper-alpha;
   }
+
+  /* This selector is targeting the <nav> element with the class named 'primary-menu' */
+
+nav.primary-menu{
+ width: 90%;
+ margin: auto;
+ border: double 2px #edda61ff;
+ text-align: center;
+ background-color: #6CA437;
+}
+
+.primary-menu ul{
+ margin: 2px; 
+ padding: 2px;
+ display: flex;
+ justify-content: center;
+}
+
+.primary-menu li{
+ list-style-type: none;
+}
+
+.primary-menu a{
+ color: #000;
+ text-decoration: none;
+ display: block; 
+ width: 100px;
+ padding: 8px 0px;
+ border: solid 0px #f00;
+}
+
+.primary-menu a:hover{
+ background-color: rgba(241, 245, 241, 1);
+ color: #9388d9ff;
+}
+
     </style>
 </head>
 <body style="background-color: seashell;">
+ <nav class="primary-menu">
+ <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="gallery.html">Garden Inspo</a><li>
+    <li><a href="resources.html">Resources</a></li>
+ </ul>
+</nav>
+
   <h1>Gardening and its Benefits</h1>
     <img class="childrenGardening" src="images/childrenGardening.jpg" alt="Kindergartners working in a raised garden" width="200px" height="120px">
     <h2 class="highlight">It's Good for Your Health</h2>
@@ -90,7 +136,6 @@
         One study even found that gardening decreases your risk of dementia! Gardening also promotes healthier eating. 
         Growing your own fruits and vegetables gives you direct access to fresh, organic produce. You know exactly what 
         goes into your food, and it encourages you to eat more nutritious, seasonal meals. </p>
-          <!--Nested List-->
           <h3>Physical Benefits of Gardening</h3>
             <ol class="physicallist">
               <li>Reduced Stress</li>
@@ -253,7 +298,7 @@
       <td>S= 40-55</td>
       <td></td>
       <td></td>
-      <td class="Spancells">S</td>
+      <td class="Spancells" >S</td>
       <td></td>
       <td></td>
       <td></td>
