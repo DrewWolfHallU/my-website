@@ -78,8 +78,7 @@
     list-style-type: upper-alpha;
   }
 
-  /* This selector is targeting the <nav> element with the class named 'primary-menu' */
-
+/* Style for navBar*/
 nav.primary-menu{
  width: 90%;
  margin: auto;
@@ -113,6 +112,33 @@ nav.primary-menu{
  color: #9388d9ff;
 }
 
+/*Style for Form*/
+form{
+  background-color: #faf7ccff;
+  border: dashed 5px #6b8e23;
+  width: 50%;
+  padding: 2% 10%;
+  margin: auto; 
+}
+
+
+input[type=submit] {
+  border-radius: 15px;
+  background-color:  rgba(243, 187, 187, 1);
+  color: black;
+  border: solid;
+  padding: 8px 16px;
+  margin: 4px 2px;
+}
+
+input[type=reset] {
+  border-radius: 15px;
+  background-color:  rgba(243, 187, 187, 1);
+  color: black;
+  border: solid;
+  padding: 8px 16px;
+  margin: 4px 2px;
+}
     </style>
 </head>
 <body style="background-color: seashell;">
@@ -379,9 +405,104 @@ nav.primary-menu{
         community spirit, promoting healthy eating, and beautifying neighborhoods. With careful planning and community involvement, these 
         gardens can thrive and become a cherished local asset. Use the following link to find community gardens in your area! <a href="https://www.communitygarden.org/garden" target="_blank">Find a Garden!</a></p>
 <img class="banner" src="images/childrenGardening.jpg" alt="Kindergartners working in a raised garden" width="800px" height="480px">
+
+<!-- Form -->
+<form method="post" action="">
+  <label>Please enter your name:</label><br><br>
+
+  <label for="fname">First name</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+
+  <label>What would you like to grow?</label><br>
+  <input type="checkbox" id="flowers" name="grow" value="flowers">
+  <label for="flowers">Flowers</label><br>
+  <input type="checkbox" id="fruitVeg" name="grow" value="fruitVeg">
+  <label for="fruitVeg">Fruits & Vegetables</label><br>
+  <input type="checkbox" id="herbs" name="grow" value="herbs">
+  <label for="herbs">Herbs</label><br><br>
+
+  <label for="container">What's your preferred gardening container?</label>
+  <select id="container" name="container">
+    <option value="InGround">In Ground</option>
+    <option value="RaisedBed">Raised Bed</option>
+    <option value="ContainersPots">Containers or Pots</option>
+  </select><br><br>
+
+  <fieldset>
+    <legend>What state do you live in?</legend>
+    <input list="states">
+    <datalist id="states">
+      <option value="Alabama">
+      <option value="Alaska">
+      <option value="Arizona">
+      <option value="Arkansas">
+      <option value="California">
+      <option value="Colorado">
+      <option value="Connecticut">
+      <option value="Delaware">
+      <option value="Florida">
+      <option value="Georgia">
+      <option value="Hawaii">
+      <option value="Idaho">
+      <option value="Illinois">
+      <option value="Indiana">
+      <option value="Iowa">
+      <option value="Kansas">
+      <option value="Kentucky">
+      <option value="Louisiana">
+      <option value="Maine">
+      <option value="Maryland">
+      <option value="Massachusetts">
+      <option value="Michigan">
+      <option value="Minnesota">
+      <option value="Mississippi">
+      <option value="Missouri">
+      <option value="Montana">
+      <option value="Nebraska">
+      <option value="Nevada">
+      <option value="New Hampshire">
+      <option value="New Jersey">
+      <option value="New Mexico">
+      <option value="New York">
+      <option value="North Carolina">
+      <option value="North Dakota">
+      <option value="Ohio">
+      <option value="Oklahoma">
+      <option value="Oregon">
+      <option value="Pennsylvania">
+      <option value="Rhode Island">
+      <option value="South Carolina">
+      <option value="South Dakota">
+      <option value="Tennessee">
+      <option value="Texas">
+      <option value="Utah">
+      <option value="Vermont">
+      <option value="Virginia">
+      <option value="Washington">
+      <option value="West Virginia">
+      <option value="Wisconsin">
+      <option value="Wyoming">
+    </datalist>
+  </fieldset><br><br>
+
+<label>How much sun does your space get?</label><br>
+  <input type="radio" id="full" name="light" value="FullSun">
+  <label for="full">Full Sun all day</label><br>
+  <input type="radio" id="part" name="light" value="PartSun">
+  <label for="part">Part Sun/Part Shade</label><br>
+  <input type="radio" id="shade" name="light" value="Shade">
+  <label for="shade">Mostly Shade</label><br>
+  <input type="radio" id="varies" name="light" value="Varies">
+  <label for="varies">It Varies</label><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Clear">
+</form> 
+
 <footer style="text-align:center; clear:both;">
 <p style="text-align:center;"><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">News</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
 <br><br><br>
+
 <p style="text-align:center;">Copyright &copy; - All rights reserved</p>
 </footer>
 </body>
