@@ -19,17 +19,17 @@
     background-color: honeydew;
  }
  table {
-	border: 1px solid #bbb; 
+	border: 1px solid #198657; 
 	border-collapse: collapse;
  }
  
 caption {
 	font-weight: bold;
-	color: #555;
+	color: #090303e0;
 }
   
 th {
-	background: #dbdbdb;
+	background: #e3aaaa;
 	padding: 5px 4px;
 	text-shadow: 1px 1px #fff;
 	border-right: 1px solid #c8c7c7;
